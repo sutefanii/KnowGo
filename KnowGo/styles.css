@@ -1,0 +1,571 @@
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #1A8373;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #156d60;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #1A8373;
+    background: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+header .btn.primary {
+    background: #FFC107;
+    color: #1A8373;
+    transition: 0.3s ease-in-out;
+    
+}
+
+header .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #1A8373 60%, #fff 40%);
+    color: #fff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-content .btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+     font-size: 1.2em;
+    background: #FFC107;
+    color: #1A8373;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/*.banner-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}*/
+
+.subjects, .features, .daily-tasks, .reviews, .mobile-app {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.subjects h2, .features h2, .daily-tasks h2, .reviews h2, .mobile-app h2 {
+    font-size: 2em;
+    color: #1A8373;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.subjects h2::after, .features h2::after, .daily-tasks h2::after, .reviews h2::after, .mobile-app h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: #FFC107;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 25px;
+}
+
+.card-container, .feature-grid, .review-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card, .feature, .review {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover, .feature:hover, .review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    background: linear-gradient(135deg, #ffc107 60%, #fff 40%);
+    color: #1A8373;
+    font-weight: bold;
+}
+
+.feature {
+    background: linear-gradient(135deg, #1A8373 60%, #ffffff 40%);
+    color: #ffffff;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1A8373;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .footer-links a:hover {
+    color: #FFC107;
+}
+
+/* Оформление для карточек предметов */
+.subject-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.subject-card {
+    background: linear-gradient(135deg, #FFC107 60%, #fff 40%);
+    color: #1A8373;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.subject-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.subject-card .btn {
+    background: #1A8373;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1em;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Оформление для фильтров */
+.filters {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.filters h2 {
+    font-size: 2em;
+    color: #1A8373;
+    margin-bottom: 20px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filter-btn {
+    background: #FFC107;
+    color: #1A8373;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #1A8373;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Общий футер */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: 4px solid #156d60;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Основной заголовок */
+.subject-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.subject-header h1 {
+    font-size: 2.5em;
+    color: #1A8373;
+}
+
+.subject-header p {
+    font-size: 1.2em;
+    color: #455d61;
+}
+
+/* Сетка тем */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.topic-card {
+    background: linear-gradient(135deg, #FFC107 60%, #fff 40%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.topic-card .icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.topic-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1A8373;
+}
+
+.topic-card p {
+    font-size: 1em;
+    color: #455d61;
+    margin-bottom: 15px;
+}
+
+.topic-card .btn {
+    background-color: #1A8373;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.topic-card .btn:hover {
+    background-color: #156d60;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: #1A8373;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header nav a {
+    margin: 0 1rem;
+  }
+  
+  .hero {
+    background: #f7f9fc;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #1A8373;
+  }
+  
+  .content {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .theory-block {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .theory-block h2 {
+    font-size: 1.8rem;
+    color: #FFC107;
+  }
+  
+  .theory-block p {
+    margin: 0.5rem 0;
+  }
+  
+  .interactive {
+    background: #e1ffed;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  
+  .interactive button {
+    
+    gap: 20px;
+    background: #1A8373;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .interactive button:hover {
+    background: #FFC107;
+    color: #1A8373;
+    transform: scale(1.1);
+  }
+  
+  .interactive-section, .calculator-section, .quiz-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #34495E;
+    margin-bottom: 1rem;
+  }
+  
+  .exercise, .quiz {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exercise p, .quiz p {
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 1rem);
+  }
+  
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background: #388E3C;
+  }
+  
+  .result {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  .yellow{
+    color: #FFC107;
+  }
+  .blue{
+    color: #144d97;
+  }
+  .green{
+    color: #1A8373;
+  }
+  .red{
+    color: red;
+  }
+ 
+  .theory-block-table {
+    width: 50%;
+    border-collapse: collapse;
+    
+}
+    th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+    th {
+    background-color: #f2f2f2;
+}
+.icon{
+    margin-top: 10%;
+    margin-bottom: -12%;
+}
+.gr{
+    color: #1A8373;
+}
+
+a{
+    text-decoration: none;
+}
+/* @font-face{
+    font-family: "Unbounded"; 
+    src: url("../fonts/RalewayRegular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; }*/

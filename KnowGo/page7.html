@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор темы | многочлены</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap">
+    <style>
+    body {
+      font-family: "Montserrat Alternates", sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header">
+            <img src="/Users/sutefanii/Documents/lalala.svg" class="logo">
+            <nav class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="#">О платформе</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Заголовок -->
+  <section class="hero">
+    <h1>Математика — Многочлены</h1>
+
+  </section>
+
+   <section class="content">
+    <div class="theory-block">
+      <h2>Определение</h2>
+      <p>Многочлен - это сумма одночленов.</p> <p>Например: <strong>12x<sup>2</sup>b<sup>3</sup></strong> - <strong>5a<sup>2</sup></strong>, <strong>-4xy<sup>2</sup></strong> + <strong>a</strong> - <strong>3</strong></p>
+      <p>Члены многочлена - одночлены, входящие в его состав.</p><p>Например: Многочлен <strong>-4xy<sup>2</sup></strong> + <strong>a</strong> - <strong>3</strong> состоит из трех членов: <strong>-4xy<sup>2</sup></strong>, <strong>a</strong> и <strong>-3</strong></p>
+      <p><strong>Одночлен</strong> можно считать многочленом, состоящим из одного члена. Многочлен, содержащий два члена, называется <strong>двучленом</strong>. Многочлен, содержащий три члена, называется <strong>трёхчленом</strong>. Если многочлен имеет более трех слагаемых, то он называется просто многочленом.</p>
+    </div>
+
+    <!-- <div class="theory-block">
+      <h2>Действия с членами</h2>
+      <ul>
+        <p>Если в одночлене первым записан числовой множитель, а произведение одинаковых степеней переменных записано в виде одной степени, то такой вид одночлена называют <strong>стандартным видом</strong>.</p>
+        <li><strong>Коэффициент:</strong> Числовой множитель (например, <strong>3</strong> в <strong>3x<sup>2</sup>y</strong>).</li>
+        <li><strong>Буквенная часть:</strong> Переменные и их степени (<strong>x<sup>2</sup>y</strong>).</li>
+        <li><strong>Степень:</strong> Сумма показателей степеней всех переменных (у <strong>-7x<sup>2</sup>y<sup>5</sup></strong> седьмая степень (2+5=7)).</li>
+        <li><strong>Пример:</strong> <strong>2ab<sup>3</sup></strong>: Коэффициент <strong>2</strong>, переменные <strong>a</strong> и <strong>b<sup>3</sup></strong>, степень <strong>4</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="theory-block">
+      <h2>Подобные одночлены</h2>
+      <p>Одночлены, у которых произведения переменных равны, хотя их порядок может отличаться, называются <strong>подобными</strong>.</p>
+      <p>Например: <strong>2x<sup>2</sup>y</strong> и <strong>-3x<sup>2</sup>y</strong>, <strong>3nmn</strong> и <strong>-5n<sup>2</sup>m</strong>, <strong>8</strong> и <strong>-2</strong></p>
+      <p>Если у подобных одночленов равные коэффициенты, они называются <strong>равными</strong> (одинаковыми).</p>
+      <p>Например: <strong>8x<sup>3</sup>y</strong>, <strong>-3xxxy</strong> и <strong>7x<sup>2</sup>xy</strong></p>
+    </div> --> 
+
+    <div class="theory-block">
+      <h2>Действия с многочленами</h2>
+      <p><strong>Сложение и вычитание</strong></p>
+      <p>При сложении и вычитании:</p>
+      <li>Раскрываем скобки;</li>
+      <li>Приводим подобные члены полученного многочлена.</li>
+      <p>Пример: (-<strong>7x<sup>2</sup></strong> + <strong>2xy</strong> + <strong>3y<sup>2</sup></strong>) + (-<strong>4y<sup>2</sup></strong> - <strong>2xy</strong> + <strong>3x<sup>2</sup></strong>) = -<strong class="blue">7x<sup>2</sup></strong> + <strong class="yellow">2xy</strong> + <strong class="green">3y<sup>2</sup></strong> - <strong class="green">4y<sup>2</sup></strong> + -<strong class="yellow">2xy</strong> + <strong class="blue">3x<sup>2</sup></strong> = -<strong>4x<sup>2</sup></strong> - <strong>y<sup>2</sup></strong>,</p>
+      <p>(-<strong>6x<sup>2</sup></strong> - <strong>5x</strong> + <strong>7</strong>) - (-<strong>6x<sup>2</sup></strong> - <strong>4x</strong> - <strong>8</strong>) = -<strong class="blue">6x<sup>2</sup></strong> - <strong class="yellow">5x</strong> + <strong class="green">7</strong> + <strong class="blue">6x<sup>2</sup></strong> + <strong class="yellow">4x</strong> + <strong class="green">8</strong> = -<strong>x</strong> + <strong>15</strong>
+      <p><strong>Умножение многочлена на одночлен</strong></p>
+      <p>Для умножения одночлена на многочлен умножаем одночлен на каждый член многочлена и находим сумму результатов.</p>
+      <p>Пример: <strong>-3a<sup>2</sup>b</strong> • <strong>2ab<sup>3</sup></strong> = (<strong>3</strong> • <strong>2</strong>) • <strong>a<sup>2+1</sup></strong> • <strong>b<sup>1+3</sup></strong> = <strong>6a<sup>3</sup>b<sup>4</sup></strong></p>
+      <p><strong>Умножение многочлена на многочлен</strong></p>
+      <p>Для нахождения произведения многочленов умножаем каждый член первого многочлена на каждый член второго многочлена и находим сумму результатов.</p>
+      <p>Пример: <strong>(a + b)</strong> • <strong>(c + d)</strong> = <strong>a • c</strong> + <strong>a • d</strong> + <strong>b • c</strong> + <strong>b • d</strong> = <strong>ac + ad + bc + bd</strong></p>
+      <p><strong>Формулы сокращенного умножения</strong></p>
+      <li>Квадрат суммы <strong>(a + b)<sup>2</sup></strong> = <strong>a<sup>2</sup></strong> + <strong>2ab</strong> + <strong>b<sup>2</sup></strong></li>
+      <p>Чтобы сумму возвести в квадрат, можно к сумме квадратов первого и второго выражений прибавить удвоенное их произведение.</p>
+      <p>Пример: <strong>(z + 5)<sup>2</sup></strong> = <strong>z<sup>2</sup></strong> + <strong>2 • z • 5</strong> + <strong>5<sup>2</sup></strong> = <strong>z<sup>2</sup></strong> + <strong>10z</strong> + <strong>25</strong></p>
+      <li>Квадрат разности <strong>(a - b)<sup>2</sup></strong> = <strong>a<sup>2</sup></strong> - <strong>2ab</strong> + <strong>b<sup>2</sup></strong></li>
+      <p>Чтобы разность возвести в квадрат, можно от суммы квадратов первого и второго выражений вычесть удвоенное их произведение.</p>
+      <p>Пример: <strong>(z - 5)<sup>2</sup></strong> = <strong>z<sup>2</sup></strong> - <strong>2 • z • 5</strong> + <strong>5<sup>2</sup></strong> = <strong>z<sup>2</sup></strong> - <strong>10z</strong> + <strong>25</strong> </p>
+      <li>Разность квадратов <strong>(a - b)</strong><strong>(a + b)</strong> = <strong>a<sup>2</sup></strong> - <strong>b<sup>2</sup></strong></li>
+      <p>Чтобы перемножить сумму и разность двух выражений, можно каждое выражение возвести в квадрат и найти их разность.</p>
+      <p>Пример: <strong>(z - 5)</strong><strong>(z + 5)</strong> = <strong>z<sup>2</sup></strong> - <strong>5<sup>2</sup></strong> = <strong>z<sup>2</sup></strong> - <strong>25</strong> </p>
+      <p><strong>Деление многочлена на одночлен</strong></p>
+      <p>Чтобы многочлен разделить на одночлен, можно каждый член многочлена разделить на данный одночлен и найти сумму результатов.</p>
+      <p>Пример: <p>(<strong>45x<sup>7</sup>y</strong> + <strong>27x<sup>6</sup>z</strong>) : <strong>9</strong> = <strong><strong class="red">45</strong>x<sup>7</sup>y</strong> : <strong class="red">9</strong> + <strong><strong class="red">27</strong>x<sup>6</sup>z</strong> : <strong class="red">9</strong> = <strong>5x<sup>7</sup>y</strong> + <strong>3x<sup>6</sup>z</strong>.</p>
+
+    </div>
+
+  </section>
+
+  <!-- Интерактивные элементы -->
+<!--
+  <section class="interactive">
+    <h2>Попробуйте сами</h2>
+    <p>Укажите коэффициент и буквенную часть одночлена <strong>7x<sup>3</sup>y<sup>2</sup></strong>.</p>
+    <button>Проверить ответ</button>
+  </section>
+
+  <section class="hero">
+  <h1>Интерактивные упражнения</h1>
+  <p>Проверьте свои знания на практике! Решайте задачи, используйте калькулятор и проходите викторины, чтобы закрепить материал.</p>
+</section>
+
+Мини-упражнения 
+<section class="interactive-section">
+  <h2>Мини-упражнения</h2>
+  <div class="exercise">
+    <p><strong>Укажите коэффициент и буквенную часть одночлена:</strong> \( 7x^3y^2 \)</p>
+    <input type="text" placeholder="Коэффициент">
+    <input type="text" placeholder="Буквенная часть">
+    <button>Проверить</button>
+  </div>
+  <div class="exercise">
+    <p><strong>Упростите:</strong> \( 3a^2b \cdot 4ab^3 \)</p>
+    <input type="text" placeholder="Введите ответ">
+    <button>Проверить</button>
+  </div>
+</section>
+
+Калькулятор одночленов 
+<section class="calculator-section">
+  <h2>Калькулятор одночленов</h2>
+  <p>Введите одночлены для выполнения операций:</p>
+  <input type="text" placeholder="Введите первый одночлен">
+  <input type="text" placeholder="Введите второй одночлен">
+  <select>
+    <option value="multiply">Умножить</option>
+    <option value="simplify">Упростить</option>
+    <option value="power">Возвести в степень</option>
+  </select>
+  <button>Выполнить</button>
+  <p class="result">Результат: <span id="calc-result"></span></p>
+</section>
+
+Викторина
+<section class="quiz-section">
+  <h2>Проверка знаний</h2>
+  <div class="quiz">
+    <p><strong>Вопрос 1:</strong> Одночлен \( 5x^2y \) умножить на \( 3xy^3 \). Какой результат?</p>
+    <input type="text" placeholder="Введите ответ">
+    <button>Проверить</button>
+  </div>
+  <div class="quiz">
+    <p><strong>Вопрос 2:</strong> Чему равен коэффициент в одночлене \( -8a^3b \)?</p>
+    <input type="text" placeholder="Введите ответ">
+    <button>Проверить</button>
+  </div>
+</section>
+
+
+
+
+
+
+  Футер -->
+      <footer>
+        <div class="container footer">
+            <div class="footer-links">
+                <a href="#">Полезные ссылки</a>
+                <a href="#">Контакты</a>
+                <a href="#">Поддержка</a>
+            </div>
+            <p>&copy; 2024 ЗнаюВсё. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
