@@ -59,11 +59,11 @@ function addCs() {
 
 
 // функции, которые засчитывают(меняют прозрачность) достижения !!!!!!!!!!!!!!!!!!
-/*
+
 window.addEventListener('beforeunload', function() { sessionStorage.setItem('mathOpacity', '0.3');});
 window.addEventListener('beforeunload', function() { sessionStorage.setItem('physOpacity', '0.3');});
 window.addEventListener('beforeunload', function() { sessionStorage.setItem('csOpacity', '0.3');});
-*/
+
 
 
 // массив правильных ответов
