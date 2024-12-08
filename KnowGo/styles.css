@@ -582,6 +582,11 @@ a{
     flex-direction: column;
     font-size: .9em;
 }
+.back-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 .test-link{
     display: flex;
@@ -652,13 +657,6 @@ a{
     align-items: center;
     justify-content: center;
     transition: 0.4 ease;
-}
-
-.sad{
-    color: rgb(126, 18, 18);
-}
-.happy{
-    color: #388E3C;
 }
 
 .test-form-section {
