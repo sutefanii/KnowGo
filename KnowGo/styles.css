@@ -12,6 +12,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 header {
@@ -99,7 +100,7 @@ header .btn:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }*/
 
-.subjects, .features, .daily-tasks, .reviews, .mobile-app {
+.subjects, .features, .daily-tasks, .reviews, .mobile-app, .achievements{
     padding: 50px 20px;
     text-align: center;
     background: #fff;
@@ -108,7 +109,7 @@ header .btn:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.subjects h2, .features h2, .daily-tasks h2, .reviews h2, .mobile-app h2 {
+.subjects h2, .features h2, .daily-tasks h2, .reviews h2, .mobile-app h2, .achievements h2 {
     font-size: 2em;
     color: #1A8373;
     margin-bottom: 20px;
@@ -234,6 +235,7 @@ footer .footer-links a:hover {
 .filters {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 82px;
 }
 
 .filters h2 {
@@ -279,12 +281,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f9f9f9;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Шапка */
@@ -564,6 +560,30 @@ body {
 a{
     text-decoration: none;
 }
+.achievement-grid{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+.achievement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.3;
+}
+.achievement>img{
+    width: 75px;
+}
+.achievement>div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    font-size: .9em;
+}
+
+
 /* @font-face{
     font-family: "Unbounded"; 
     src: url("../fonts/RalewayRegular.ttf") format("truetype"); 

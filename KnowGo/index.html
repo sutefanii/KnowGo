@@ -39,11 +39,11 @@ body {
         <div class="container">
             <h2>Предметы</h2>
             <div class="card-container">
-                <a href="page3.html"  class="card">Математика</a>
-                <a href="pagephys.html"class="card">Физика</a>
+                <a href="#"  class="card" onclick="addMath()">Математика</a>
+                <a href="#"class="card" onclick="addPhysics()">Физика</a>
                 <div class="card">Английский</div>
                 <div class="card">История</div>
-                <a href="pageinf.html" class="card">Информатика</a>
+                <a href="#" class="card" onclick="addCs()">Информатика</a>
                 <div class="card">География</div>
             </div>
         </div>
@@ -92,6 +92,59 @@ body {
         </div>
     </section>
 
+    <section class="achievements">
+        <div class="container">
+            <h2>Достижения</h2>
+            <div class="achievement-grid">
+                <div class="achievement" id="math">
+                    <img src="calculating.png" alt="">
+                    <div>
+                        <strong>Алгебраический Ас</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "Математика"</p>
+                    </div>
+                </div>
+                <div class="achievement" id="physics">
+                    <img src="atom.png" alt="">
+                    <div>
+                        <strong>Второй Ньютон</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "Физика"</p>
+                    </div>
+                </div>
+                <div class="achievement" id="english">
+                    <img src="language.png" alt="">
+                    <div>
+                        <strong>Лингвистический лидер</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "Английский язык"</p>
+                    </div>
+                </div>
+                <div class="achievement" id="history">
+                    <img src="museum.png" alt="">
+                    <div>
+                        <strong>Мастер Мифов</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "История"</p>
+                    </div>
+                </div>
+                <div class="achievement" id="cs">
+                    <img src="programming.png" alt="">
+                    <div>
+                        <strong>Кодовый Король</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "Информатика"</p>
+                    </div>
+                </div>
+                <div class="achievement" id="geography">
+                    <img src="globe.png" alt="">
+                    <div>
+                        <strong>Покоритель Планеты</strong>
+                        <p>Даётся за успешное прохождение тем по учебному предмету "География"</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
     <footer>
         <div class="container footer">
             <div class="footer-links">
@@ -99,8 +152,10 @@ body {
                 <a href="#">Контакты</a>
                 <a href="#">Поддержка</a>
             </div>
-            <p>&copy; 2024 ЗнаюВсё. Все права защищены.</p>
+            <p>&copy; 2024 ЗнайВсё. Все права защищены.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
