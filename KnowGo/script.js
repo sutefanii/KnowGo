@@ -62,7 +62,7 @@ function addCs() {
 
 
 
-/*window.addEventListener('beforeunload', function() { localStorage.removeItem('mathOpacity');});
+window.addEventListener('beforeunload', function() { localStorage.removeItem('mathOpacity');});
 window.addEventListener('beforeunload', function() { localStorage.removeItem('physOpacity');});
-window.addEventListener('beforeunload', function() { localStorage.removeItem('csOpacity');});*/
+window.addEventListener('beforeunload', function() { localStorage.removeItem('csOpacity');});
 
