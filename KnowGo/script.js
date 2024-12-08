@@ -59,7 +59,11 @@ function addCs() {
 
 // функции, которые засчитывают(меняют прозрачность) достижения
 
-
+<script>
+function goBack() {
+  window.history.back(); // Возвращает на предыдущую страницу
+}
+</script>
 
 /*
 window.addEventListener('beforeunload', function() { localStorage.removeItem('mathOpacity');});
