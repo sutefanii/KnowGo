@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест | Математика</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap">
+    <style>
+        body {
+          font-family: "Montserrat Alternates", sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <img src="/Users/sutefanii/Documents/lalala.svg" class="logo">
+            <nav class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="#" onclick="redirectToIndex()">О платформе</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="test-form-section">
+
+        <div class="test-section">
+            <div class="progress-container">
+                <div class="progress"></div>
+                <div class="circle" id="circle-1"></div>
+                <div class="circle" id="circle-2"></div>
+                <div class="circle" id="circle-3"></div>
+                <div class="circle" id="circle-4"></div>
+                <div class="circle" id="circle-5"></div>
+                <div class="circle" id="circle-6"></div>
+                <div class="circle" id="circle-7"></div>
+                <div class="circle" id="circle-8"></div>
+                <div class="circle" id="circle-9"></div>
+                <div class="circle" id="circle-10"></div>
+            </div>
+        </div>
+
+        <form class="test-form">
+            <h2>Тестовая форма</h2>
+        
+        <div class="question">
+            <h3>Что такое многочлен?</h3>
+            <label><input type="radio" name="q1" value="a"> Выражение, содержащее только одну переменную</label>
+            <label><input type="radio" name="q1" value="b"> Сумма одночленов</label>
+            <label><input type="radio" name="q1" value="c"> Произведение одночленов</label>
+            <label><input type="radio" name="q1" value="d"> Выражение, содержащее только константы</label>
+        </div>
+
+        <div class="question">
+            <h3>Как называется многочлен степени 2?</h3>
+            <label><input type="radio" name="q2" value="a"> Линейный многочлен</label>
+            <label><input type="radio" name="q2" value="b"> Квадратный многочлен</label>
+            <label><input type="radio" name="q2" value="c"> Кубический многочлен</label>
+            <label><input type="radio" name="q2" value="d"> Квадратичная функция</label>
+        </div>
+
+        <div class="question">
+            <h3>Что такое одночлен?</h3>
+            <label><input type="radio" name="q3" value="a"> Сумма нескольких переменных</label>
+            <label><input type="radio" name="q3" value="b"> Произведение переменной и константы</label>
+            <label><input type="radio" name="q3" value="c"> Произведение переменных и констант</label>
+            <label><input type="radio" name="q3" value="d"> Сумма переменных и констант</label>
+        </div>
+
+        <div class="question">
+            <h3>Как называется одночлен, содержащий только одну переменную?</h3>
+            <label><input type="radio" name="q4" value="a"> Многочлен</label>
+            <label><input type="radio" name="q4" value="b"> Линейный одночлен</label>
+            <label><input type="radio" name="q4" value="c"> Константа</label>
+            <label><input type="radio" name="q4" value="d"> Квадратный одночлен</label>
+        </div>
+
+        <div class="question">
+            <h3>Что такое функция?</h3>
+            <label><input type="radio" name="q5" value="a"> Соотношение между двумя переменными, где каждой переменной из одной группы соответствует одна переменная из другой группы</label>
+            <label><input type="radio" name="q5" value="b"> Соотношение между двумя переменными, где каждой переменной из одной группы соответствует несколько переменных из другой группы</label>
+            <label><input type="radio" name="q5" value="c"> Соотношение между несколькими переменными</label>
+            <label><input type="radio" name="q5" value="d"> Соотношение между константами</label>
+        </div>
+
+        <div class="question">
+            <h3>Как называется функция вида f(x) = ax + b?</h3>
+            <label><input type="radio" name="q6" value="a">  Квадратная функция</label>
+            <label><input type="radio" name="q6" value="b">  Линейная функция</label>
+            <label><input type="radio" name="q6" value="c">  Кубическая функция</label>
+            <label><input type="radio" name="q6" value="d">  Логарифмическая функция</label>
+        </div>
+
+        <div class="question">
+            <h3>Что такое неравенство?</h3>
+            <label><input type="radio" name="q7" value="a">  Уравнение, содержащее знак равенства</label>
+            <label><input type="radio" name="q7" value="b">  Уравнение, содержащее знак неравенства</label>
+            <label><input type="radio" name="q7" value="c">  Уравнение, содержащее переменные и константы</label>
+            <label><input type="radio" name="q7" value="d">  Уравнение, содержащее только переменные</label>
+        </div>
+
+        <div class="question">
+            <h3>Какое из следующих выражений является неравенством?</h3>
+            <label><input type="radio" name="q8" value="a"> x + 2 = 5</label>
+            <label><input type="radio" name="q8" value="b"> x - 3 > 2</label>
+            <label><input type="radio" name="q8" value="c"> x² + 4 = 0</label>
+            <label><input type="radio" name="q8" value="d"> 2x + 3 = 7</label>
+        </div>
+
+        <div class="question">
+            <h3>Какое из следующих выражений является многочленом?</h3>
+            <label><input type="radio" name="q9" value="a"> 3x + 2</label>
+            <label><input type="radio" name="q9" value="b"> 1 + 1.2</label>
+            <label><input type="radio" name="q9" value="c"> 1 + 2</label>
+            <label><input type="radio" name="q9" value="d"> 2х</label>
+        </div>
+
+        <div class="question">
+            <h3>Какое из следующих выражений является одночленом?</h3>
+            <label><input type="radio" name="q10" value="a"> 5x² + 3x + 2</label>
+            <label><input type="radio" name="q10" value="b"> 4x</label>
+            <label><input type="radio" name="q10" value="c"> x² + 2x + 1</label>
+            <label><input type="radio" name="q10" value="d"> 1/x</label>
+        </div>
+        <button type="submit" id="submit">Отправить</button>
+    </form>
+
+
+</section>
+
+    <footer class="bot">
+        <div class="container footer">
+            <div class="footer-links">
+                <a href="#">Полезные ссылки</a>
+                <a href="#">Контакты</a>
+                <a href="#">Поддержка</a>
+            </div>
+            <p>&copy; 2024 KnowGo. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
