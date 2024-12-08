@@ -582,12 +582,12 @@ a{
     flex-direction: column;
     font-size: .9em;
 }
-.back-button {
+/*.back-button {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
+*/
 .test-link{
     display: flex;
     justify-content: center;
